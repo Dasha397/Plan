@@ -10,18 +10,22 @@
 }
 
 // VARIABLES
+$base: 4px;
+
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
-$padding-vertical: 120px;
-$padding-vertical-sm: 60px;
-$padding-vertical-xs: 20px;
+$padding-vertical: $base * 30;
+$padding-vertical-sm: $base * 15;
+$padding-vertical-xs: $base * 5;
 
 $color-divider: rgba(216, 227, 254, 1);
 $color-gray: rgba(233, 239, 255, 1);
 $color-light-gray: #F5F8FF;
 $color-primary: rgba(104, 136, 255, 1);
+
+$transition: .2s;
 
 
 // COMMON
@@ -44,11 +48,125 @@ body {
 	}
 }
 
+.btn-wrapper {
+	padding: 13px 16px;
+	margin-left: $base * 11;
+	border-radius: 4px;
+	border: none;
+}
+
+.btn {
+	text-decoration: none;
+	list-style: none;
+	font-weight: $fw-bold;
+	font-size: 13px;
+	@include quicksand;
+}
+
+.btn--primary {
+	background-color: rgba(210, 225, 255, 1);
+	transition: $transition;
+
+	a {
+		color: $color-primary;
+	}
+
+	&:hover {
+		background-color: rgb(184, 208, 255);
+
+		a {
+			color: rgb(81, 114, 233);
+		}
+	}
+}
+
 // HEADER
 .section-header {
 	.wrapper-inner {
 		padding-top: $padding-vertical-xs;
 		padding-bottom: $padding-vertical-xs;
+	}
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	background-color: $color-primary;
+	height: $base * 6;
+	width: $base * 6;
+	border-radius: 100%;
+}
+
+.nav {
+	margin-left: $base * 18;
+}
+
+.nav-wrapper {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+
+	&__item {
+		&+& {
+			margin-left: $base * 10;
+		}
+
+		&-link {
+			@include quicksand;
+			font-size: 14px;
+			color: #697CA6;
+			text-decoration: none;
+			font-weight: $fw-medium;
+			transition: $transition;
+
+			&:hover {
+				color: $color-primary;
+			}
+
+			&--active {
+				font-weight: $fw-bold;
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.socials {
+	margin-left: auto;
+}
+
+.socials-wrapper {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+
+	&__item {
+		&+& {
+			margin-left: $base * 9;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+
+			path {
+				fill: #B6BAC7;
+				transition: $transition;
+			}
+
+			&:hover {
+				path {
+					fill: $color-primary;
+					transition: $transition;
+				}
+			}
+		}
 	}
 }
 
