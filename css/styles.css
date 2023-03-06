@@ -22,6 +22,7 @@ body {
   margin-left: 44px;
   border-radius: 4px;
   border: none;
+  transition: 0.2s;
 }
 
 .btn {
@@ -34,7 +35,6 @@ body {
 
 .btn--primary {
   background-color: rgb(210, 225, 255);
-  transition: 0.2s;
 }
 .btn--primary a {
   color: rgb(104, 136, 255);
@@ -78,7 +78,7 @@ body {
 }
 .nav-wrapper__item-link {
   font-family: "Quicksand", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #697CA6;
   text-decoration: none;
   font-weight: 500;
@@ -159,6 +159,16 @@ body {
 .section-footer .wrapper-inner {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.copyright {
+  font-family: "Quicksand", sans-serif;
+  color: #697CA6;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 96px;
 }
 
 /*# sourceMappingURL=styles.css.map */

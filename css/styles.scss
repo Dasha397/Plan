@@ -16,6 +16,9 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 700;
 
+$fs-md: 15px;
+$fs-sm: 13px;
+
 $padding-vertical: $base * 30;
 $padding-vertical-sm: $base * 15;
 $padding-vertical-xs: $base * 5;
@@ -23,6 +26,7 @@ $padding-vertical-xs: $base * 5;
 $color-divider: rgba(216, 227, 254, 1);
 $color-gray: rgba(233, 239, 255, 1);
 $color-light-gray: #F5F8FF;
+$color-dark-gray: #697CA6;
 $color-primary: rgba(104, 136, 255, 1);
 
 $transition: .2s;
@@ -53,19 +57,19 @@ body {
 	margin-left: $base * 11;
 	border-radius: 4px;
 	border: none;
+	transition: $transition;
 }
 
 .btn {
 	text-decoration: none;
 	list-style: none;
 	font-weight: $fw-bold;
-	font-size: 13px;
+	font-size: $fs-sm;
 	@include quicksand;
 }
 
 .btn--primary {
 	background-color: rgba(210, 225, 255, 1);
-	transition: $transition;
 
 	a {
 		color: $color-primary;
@@ -117,8 +121,8 @@ body {
 
 		&-link {
 			@include quicksand;
-			font-size: 14px;
-			color: #697CA6;
+			font-size: $fs-sm;
+			color: $color-dark-gray;
 			text-decoration: none;
 			font-weight: $fw-medium;
 			transition: $transition;
@@ -230,4 +234,15 @@ body {
 		padding-top: $padding-vertical-sm;
 		padding-bottom: $padding-vertical-sm;
 	}
+}
+
+.copyright {
+	@include quicksand;
+	color: $color-dark-gray;
+	opacity: 0.5;
+	font-size: $fs-sm;
+	font-weight: $fw-medium;
+
+	margin-top: $base * 5;
+	margin-left: $base * 24;
 }
