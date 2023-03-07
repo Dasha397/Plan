@@ -255,31 +255,34 @@ h5 {
 
 .section-plan {
   background-color: #F5F8FF;
-}
-
-.plan {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
-  height: 436px;
+  overflow: hidden;
 }
-.plan-description h3 {
+.section-plan .wrapper-inner {
+  padding-top: 200px;
+  padding-bottom: 216px;
+}
+.section-plan .plan-description {
+  width: 50%;
+}
+.section-plan .plan-description__img {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  z-index: 0;
+}
+@media screen and (max-width: 1500px) {
+  .section-plan .plan-description__img {
+    left: 50%;
+  }
+}
+.section-plan .plan-description h3 {
   font-weight: 100;
   margin-bottom: 36px;
 }
-.plan-description h3 span {
+.section-plan .plan-description h3 span {
   font-weight: 500;
 }
-.plan-description .text {
-  max-width: 44%;
-}
-.plan__img {
-  position: absolute;
-  top: 0;
-  right: -228px;
-}
-
 .section-stats .wrapper-inner {
   padding-top: 60px;
   padding-bottom: 60px;

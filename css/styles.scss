@@ -331,16 +331,31 @@ h5 {
 // PLAN
 .section-plan {
 	background-color: $color-light-gray;
-}
-
-.plan {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: relative;
-	height: $base * 109;
+	overflow: hidden;
 
-	&-description {
+	.wrapper-inner {
+		padding-top: $base * 50;
+		padding-bottom: $base * 54;
+	}
+
+	.plan-description {
+		width: 50%;
+
+		&__img {
+			position: absolute;
+			top: 17%;
+			right: 0;
+			z-index: 0;
+		}
+
+		@media screen and (max-width: 1500px) {
+			&__img {
+				left: 50%;
+			}
+		}
+
+
 		h3 {
 			font-weight: $fw-light;
 			margin-bottom: $base * 9;
@@ -351,14 +366,8 @@ h5 {
 		}
 
 		.text {
-			max-width: 44%;
+			// max-width: 44%;
 		}
-	}
-
-	&__img {
-		position: absolute;
-		top: 0;
-		right: -$base * 57;
 	}
 }
 
