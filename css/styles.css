@@ -240,6 +240,12 @@ h5 {
   padding-bottom: 60px;
 }
 
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .section-plan {
   background-color: #F5F8FF;
 }

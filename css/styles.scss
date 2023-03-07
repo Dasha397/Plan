@@ -318,6 +318,12 @@ h5 {
 	}
 }
 
+.customers {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 // PLAN
 .section-plan {
 	background-color: $color-light-gray;
