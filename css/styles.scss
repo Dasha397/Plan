@@ -301,7 +301,6 @@ h5 {
 			border-width: 8px 12px;
 			border-color: #fff;
 			border-left-color: rgb(81, 114, 233);
-			;
 		}
 	}
 }
@@ -318,6 +317,15 @@ h5 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 0;
+
+	&__item {
+		list-style: none;
+
+		a {
+			display: block;
+		}
+	}
 }
 
 // PLAN
