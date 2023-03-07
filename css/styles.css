@@ -208,9 +208,31 @@ h5 {
   margin: 0 auto;
 }
 
-.btn-icon-play svg {
-  margin-top: 16px;
-  height: 48px;
+.btn-icon-play {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.btn-icon-play a {
+  position: relative;
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 10px rgba(67, 67, 71, 0.0431372549);
+}
+.btn-icon-play a::before {
+  position: absolute;
+  left: 40%;
+  bottom: 30%;
+  content: "";
+  border-style: solid;
+  border-width: 8px 12px;
+  border-color: #fff;
+  border-left-color: #3D4F9F;
 }
 
 .section-customers .wrapper-inner {

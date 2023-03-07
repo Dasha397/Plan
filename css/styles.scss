@@ -282,9 +282,31 @@ h5 {
 }
 
 .btn-icon-play {
-	svg {
-		margin-top: $base * 4;
-		height: $base * 12;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+
+	a {
+		position: relative;
+		text-decoration: none;
+		list-style-type: none;
+		display: block;
+		height: 45px;
+		width: 45px;
+		border-radius: 100%;
+		background-color: #fff;
+		box-shadow: 0 0 10px 10px #4343470b;
+
+		&::before {
+			position: absolute;
+			left: 40%;
+			bottom: 30%;
+			content: '';
+			border-style: solid;
+			border-width: 8px 12px;
+			border-color: #fff;
+			border-left-color: #3D4F9F;
+		}
 	}
 }
 
