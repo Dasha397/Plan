@@ -102,11 +102,15 @@ h5 {
 h2 {
 	font-size: 48px;
 	margin-bottom: $base * 10;
+	font-weight: $fw-light;
+
+	span {
+		font-weight: $fw-medium;
+	}
 }
 
 h3 {
 	font-size: 36px;
-	margin-bottom: $base * 28;
 }
 
 h4 {
@@ -120,9 +124,9 @@ h5 {
 	// font-weight: $fw-bold;
 }
 
-// .text-align-center {
-// 	text-align: center;
-// }
+.text {
+	line-height: 1.8;
+}
 
 .dots {
 	display: flex;
@@ -264,16 +268,7 @@ h5 {
 		text-align: center;
 
 		&-content {
-			h2 {
-				font-weight: $fw-light;
-
-				span {
-					font-weight: $fw-medium;
-				}
-			}
-
 			.text {
-				line-height: 1.8;
 				width: 60%;
 				margin: 0 auto;
 			}
@@ -327,6 +322,35 @@ h5 {
 // PLAN
 .section-plan {
 	background-color: $color-light-gray;
+}
+
+.plan {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: $base * 109;
+
+	&-description {
+		h3 {
+			font-weight: $fw-light;
+			margin-bottom: $base * 9;
+
+			span {
+				font-weight: $fw-medium;
+			}
+		}
+
+		.text {
+			max-width: 44%;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		right: -$base * 57;
+	}
 }
 
 // FEATURES
