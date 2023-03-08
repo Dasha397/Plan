@@ -26,6 +26,23 @@ body {
   transition: 0.2s;
 }
 
+.btn-group {
+  display: flex;
+}
+.btn-group-wrapper {
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.btn-group-wrapper:nth-child(1) {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.btn-group-wrapper:nth-child(2) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .btn {
   text-decoration: none;
   list-style: none;
@@ -45,6 +62,33 @@ body {
 }
 .btn--primary:hover a {
   color: rgb(81, 114, 233);
+}
+
+.btn--blue {
+  background-color: rgb(104, 136, 255);
+}
+.btn--blue a {
+  color: #fff;
+}
+.btn--blue:hover {
+  background-color: #446cff;
+}
+.btn--blue:hover a {
+  color: #fafafa;
+}
+
+.btn--transparent {
+  background-color: #F5F8FF;
+  border: 2px solid #697CA6;
+}
+.btn--transparent a {
+  color: #697CA6;
+}
+.btn--transparent:hover {
+  background-color: #e6edff;
+}
+.btn--transparent:hover a {
+  color: #6376a2;
 }
 
 h1,
@@ -283,6 +327,10 @@ h5 {
 .section-plan .plan-description h3 span {
   font-weight: 500;
 }
+.section-plan .plan-description .btn-group {
+  margin-top: 56px;
+}
+
 .section-stats .wrapper-inner {
   padding-top: 60px;
   padding-bottom: 60px;

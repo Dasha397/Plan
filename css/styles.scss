@@ -24,6 +24,7 @@ $padding-vertical: $base * 30;
 $padding-vertical-sm: $base * 15;
 $padding-vertical-xs: $base * 5;
 
+$color-white: #fff;
 $color-divider: rgba(216, 227, 254, 1);
 $color-gray: rgba(233, 239, 255, 1);
 $color-light-gray: #F5F8FF;
@@ -63,6 +64,26 @@ body {
 	transition: $transition;
 }
 
+.btn-group {
+	display: flex;
+
+	&-wrapper {
+		padding: 12px 24px;
+		border-radius: 4px;
+		transition: $transition;
+
+		&:nth-child(1) {
+			border-bottom-right-radius: 0px;
+			border-top-right-radius: 0px;
+		}
+
+		&:nth-child(2) {
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+	}
+}
+
 .btn {
 	text-decoration: none;
 	list-style: none;
@@ -83,6 +104,39 @@ body {
 
 		a {
 			color: rgb(81, 114, 233);
+		}
+	}
+}
+
+.btn--blue {
+	background-color: $color-primary;
+
+	a {
+		color: $color-white;
+	}
+
+	&:hover {
+		background-color: darken($color: $color-primary, $amount: 7);
+
+		a {
+			color: darken($color: $color-white, $amount: 2);
+		}
+	}
+}
+
+.btn--transparent {
+	background-color: $color-light-gray;
+	border: 2px solid $color-dark-gray;
+
+	a {
+		color: $color-dark-gray;
+	}
+
+	&:hover {
+		background-color: darken($color: $color-light-gray, $amount: 3);
+
+		a {
+			color: darken($color: $color-dark-gray, $amount: 2);
 		}
 	}
 }
@@ -365,8 +419,8 @@ h5 {
 			}
 		}
 
-		.text {
-			// max-width: 44%;
+		.btn-group {
+			margin-top: $base * 14;
 		}
 	}
 }
