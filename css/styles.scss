@@ -32,13 +32,18 @@ $color-main-text: #8E96B7;
 $color-dark-gray: #697CA6;
 $color-primary: rgba(104, 136, 255, 1);
 $color-blue: #3D4F9F;
-
+$color-red: #D43F3F;
+$color-red-light: #FFD7D7;
 $transition: .2s;
 
 // COMMON
 body {
 	@include roboto;
 	color: $color-main-text;
+}
+
+ul {
+	padding: 0;
 }
 
 .wrapper-outer {
@@ -64,6 +69,13 @@ body {
 	transition: $transition;
 }
 
+.btn {
+	text-decoration: none;
+	font-weight: $fw-bold;
+	font-size: $fs-sm;
+	@include quicksand;
+}
+
 .btn-group {
 	display: flex;
 
@@ -84,14 +96,6 @@ body {
 	}
 }
 
-.btn {
-	text-decoration: none;
-	list-style: none;
-	font-weight: $fw-bold;
-	font-size: $fs-sm;
-	@include quicksand;
-}
-
 .btn--primary {
 	background-color: rgba(210, 225, 255, 1);
 
@@ -108,8 +112,25 @@ body {
 	}
 }
 
+.btn--red {
+	background-color: $color-red-light;
+
+	a {
+		color: $color-red;
+	}
+
+	&:hover {
+		background-color: darken($color: $color-red-light, $amount: 5);
+
+		a {
+			color: darken($color: $color-red, $amount: 2);
+		}
+	}
+}
+
 .btn--blue {
 	background-color: $color-primary;
+	border: none;
 
 	a {
 		color: $color-white;
@@ -169,13 +190,19 @@ h3 {
 
 h4 {
 	font-size: 24px;
+	font-weight: $fw-medium;
 }
 
 h5 {
 	font-size: 10px;
 	@include roboto();
 	margin-bottom: $base * 4;
+	text-transform: uppercase;
 	// font-weight: $fw-bold;
+}
+
+h6 {
+	font-size: 14px;
 }
 
 .text {
@@ -204,6 +231,11 @@ h5 {
 			margin-left: $base * 3;
 		}
 	}
+}
+
+.line {
+	display: flex;
+	align-items: center;
 }
 
 // HEADER
@@ -426,7 +458,71 @@ h5 {
 }
 
 // FEATURES
-.section-features {}
+.section-features {
+	position: relative;
+
+	.clouds {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		z-index: -1;
+	}
+
+	.wrapper-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.features-list {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 100px;
+			list-style: none;
+			width: 85%;
+
+			&__item {
+				max-width: 140px;
+				text-align: center;
+
+				img {
+					height: $base * 16;
+					width: $base * 16;
+				}
+
+				h6 {
+					color: $color-primary;
+				}
+
+				.text {
+					font-size: 11px;
+				}
+			}
+		}
+
+		.btn-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			list-style: none;
+			margin: 100px auto 0px;
+			width: 37%;
+			transition: $transition;
+
+			&__item {
+				button {
+					margin-left: 0;
+				}
+
+				span {
+					font-size: $fs-sm;
+				}
+			}
+		}
+	}
+}
 
 // STATS
 .section-stats {
