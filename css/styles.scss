@@ -216,7 +216,7 @@ h6 {
 
 .dots {
 	display: flex;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	transition: $transition;
@@ -593,9 +593,55 @@ h6 {
 // BLOG
 .section-blog {
 	background-color: $color-light-gray;
+
+	.wrapper-inner--wide {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		.blog-slider {
+			display: flex;
+			padding: 0px 24px;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: $base * 23;
+
+			&-section {
+				display: flex;
+				padding: 60px 30px;
+				justify-content: space-between;
+				background-color: #fff;
+
+				&-content {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					text-align: start;
+					width: $base * 100;
+					margin-left: $base * 16;
+
+					.text {
+						font-size: 14px;
+					}
+
+					.btn-group-wrapper {
+						border: none;
+
+					}
+
+				}
+			}
+		}
+
+		.dots {
+			margin-top: $base * 25;
+		}
+	}
 }
 
 // QUOTES
+
 .section-quotes {
 	background-color: $color-gray;
 }

@@ -160,7 +160,7 @@ h6 {
 
 .dots {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   transition: 0.2s;
@@ -470,6 +470,42 @@ h6 {
 
 .section-blog {
   background-color: #F5F8FF;
+}
+.section-blog .wrapper-inner--wide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section-blog .wrapper-inner--wide .blog-slider {
+  display: flex;
+  padding: 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 92px;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section {
+  display: flex;
+  padding: 60px 30px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  width: 400px;
+  margin-left: 64px;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section-content .text {
+  font-size: 14px;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section-content .btn-group-wrapper {
+  border: none;
+}
+.section-blog .wrapper-inner--wide .dots {
+  margin-top: 100px;
 }
 
 .section-quotes {
