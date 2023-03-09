@@ -644,6 +644,49 @@ h6 {
 
 .section-quotes {
 	background-color: $color-gray;
+
+	.wrapper-inner {
+		display: flex;
+		justify-content: space-between;
+
+		.quotes-content {
+			display: flex;
+			flex-direction: column;
+			height: 187px;
+			width: 335px;
+			justify-content: space-between;
+			padding-bottom: 80px;
+
+			h3 {
+				font-weight: $fw-medium;
+			}
+		}
+
+		.quotes-slider {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+
+			.text {
+				width: 425px;
+				padding: 40px 65px;
+				background-color: #fff;
+				box-sizing: border-box;
+				line-height: 24px;
+			}
+
+			.img {
+				height: 62px;
+				width: 62px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 145px;
+				margin: auto;
+			}
+		}
+	}
 }
 
 // FAQ

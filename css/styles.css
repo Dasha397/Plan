@@ -511,6 +511,43 @@ h6 {
 .section-quotes {
   background-color: rgb(233, 239, 255);
 }
+.section-quotes .wrapper-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.section-quotes .wrapper-inner .quotes-content {
+  display: flex;
+  flex-direction: column;
+  height: 187px;
+  width: 335px;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+.section-quotes .wrapper-inner .quotes-content h3 {
+  font-weight: 500;
+}
+.section-quotes .wrapper-inner .quotes-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.section-quotes .wrapper-inner .quotes-slider .text {
+  width: 425px;
+  padding: 40px 65px;
+  background-color: #fff;
+  box-sizing: border-box;
+  line-height: 24px;
+}
+.section-quotes .wrapper-inner .quotes-slider .img {
+  height: 62px;
+  width: 62px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 145px;
+  margin: auto;
+}
 
 .section-started {
   background-color: rgb(104, 136, 255);
