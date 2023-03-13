@@ -549,6 +549,42 @@ h6 {
   margin: auto;
 }
 
+.section-faq .wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+}
+.section-faq .wrapper-inner .faq {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  color: #8E96B7;
+  list-style: none;
+}
+.section-faq .wrapper-inner .faq__item {
+  display: flex;
+  padding: 10px 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #8E96B7;
+}
+.section-faq .wrapper-inner .faq__item-header {
+  display: flex;
+}
+.section-faq .wrapper-inner .faq__item-header .text {
+  margin-left: 20px;
+}
+.section-faq .wrapper-inner .faq__item-description {
+  display: none;
+  justify-content: space-between;
+}
+.section-faq .wrapper-inner .faq__item-description .text {
+  margin-left: 60px;
+  max-width: 0px;
+}
+
 .section-started {
   background-color: rgb(104, 136, 255);
 }

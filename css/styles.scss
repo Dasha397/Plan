@@ -690,7 +690,50 @@ h6 {
 }
 
 // FAQ
-.section-faq {}
+.section-faq {
+	.wrapper-inner {
+		display: flex;
+		flex-direction: column;
+		padding-left: $base * 20;
+		padding-right: $base * 20;
+		text-align: center;
+
+		.faq {
+			display: flex;
+			flex-direction: column;
+			margin-top: $base * 25;
+			color: $color-main-text;
+			list-style: none;
+
+			&__item {
+				display: flex;
+				padding: 10px 15px;
+				flex-direction: column;
+				justify-content: space-between;
+				border-bottom: 1px solid $color-main-text;
+
+				&-header {
+					display: flex;
+
+					.text {
+						margin-left: 20px;
+
+					}
+				}
+
+				&-description {
+					display: none;
+					justify-content: space-between;
+
+					.text {
+						margin-left: 60px;
+						max-width: 0px;
+					}
+				}
+			}
+		}
+	}
+}
 
 // STARTED
 .section-started {
