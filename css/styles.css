@@ -515,9 +515,16 @@ h6 {
 .section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper:hover span {
   display: block;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper:hover span img {
+  height: 30%;
+  width: 30%;
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 .section-blog .wrapper-inner--wide .blog-slider-section-content {
   display: flex;
