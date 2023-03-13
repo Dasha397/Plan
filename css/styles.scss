@@ -243,6 +243,16 @@ h6 {
 	align-items: center;
 }
 
+.clouds {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: -1;
+}
+
 // HEADER
 .section-header {
 	.wrapper-inner {
@@ -466,16 +476,6 @@ h6 {
 .section-features {
 	position: relative;
 
-	.clouds {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		z-index: -1;
-	}
-
 	.wrapper-inner {
 		display: flex;
 		flex-direction: column;
@@ -673,7 +673,6 @@ h6 {
 
 					.btn-group-wrapper {
 						border: none;
-
 					}
 
 				}
@@ -819,6 +818,37 @@ h6 {
 // STARTED
 .section-started {
 	background-color: $color-primary;
+	position: relative;
+	z-index: 0;
+
+	.wrapper-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		h5,
+		h2,
+		.text {
+			color: $color-white;
+		}
+
+		.text {
+			width: 85%;
+		}
+
+		.btn-group {
+			margin-top: 50px;
+
+			.btn--blue {
+				border: 1px solid $color-white;
+			}
+
+			.btn--transparent {
+				border: none;
+			}
+		}
+	}
 }
 
 // NEWSLATTER

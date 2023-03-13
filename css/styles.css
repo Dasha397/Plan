@@ -184,6 +184,16 @@ h6 {
   align-items: center;
 }
 
+.clouds {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
 .section-header .wrapper-inner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -366,15 +376,6 @@ h6 {
 
 .section-features {
   position: relative;
-}
-.section-features .clouds {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: -1;
 }
 .section-features .wrapper-inner {
   display: flex;
@@ -650,6 +651,31 @@ h6 {
 
 .section-started {
   background-color: rgb(104, 136, 255);
+  position: relative;
+  z-index: 0;
+}
+.section-started .wrapper-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section-started .wrapper-inner h5,
+.section-started .wrapper-inner h2,
+.section-started .wrapper-inner .text {
+  color: #fff;
+}
+.section-started .wrapper-inner .text {
+  width: 85%;
+}
+.section-started .wrapper-inner .btn-group {
+  margin-top: 50px;
+}
+.section-started .wrapper-inner .btn-group .btn--blue {
+  border: 1px solid #fff;
+}
+.section-started .wrapper-inner .btn-group .btn--transparent {
+  border: none;
 }
 
 .section-newslatter {
