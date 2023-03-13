@@ -66,6 +66,10 @@ p {
 	}
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 .btn-wrapper {
 	padding: 13px 16px;
 	margin-left: $base * 11;
@@ -854,6 +858,58 @@ h6 {
 // NEWSLATTER
 .section-newslatter {
 	background-color: $color-gray;
+
+	.wrapper-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.newslatter-content {
+			display: flex;
+			flex-direction: column;
+
+			h6 {
+				color: $color-blue;
+				font-size: 18px;
+				margin: 0;
+			}
+
+			.text {
+				margin-top: 18px;
+				max-width: 330px;
+			}
+		}
+
+		.newslatter-form {
+			display: flex;
+			height: 50px;
+
+			input {
+				padding: 5px 15px;
+				border: none;
+				border-radius: 4px;
+				width: 279px;
+				color: $color-dark-gray;
+
+				&::placeholder {
+					color: #B6BAC7;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.btn--blue {
+				padding: 10px 30px;
+				color: $color-white;
+			}
+
+			.btn-wrapper {
+				margin-left: 14px;
+			}
+		}
+	}
 }
 
 // FOOTER
