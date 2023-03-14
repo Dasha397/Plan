@@ -37,6 +37,10 @@ $color-red-light: #FFD7D7;
 $transition: .2s;
 
 // COMMON
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	@include roboto;
 	color: $color-main-text;
