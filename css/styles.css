@@ -557,6 +557,9 @@ h6 {
 .section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper span {
   display: none;
 }
+.section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper img {
+  transition-duration: 2s;
+}
 .section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper:hover span {
   display: block;
   position: absolute;
