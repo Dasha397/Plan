@@ -270,19 +270,22 @@ h6 {
 	transition: $transition;
 	cursor: pointer;
 
+	li+li {
+		margin-left: $base * 3;
+	}
+
 	&__item {
+		border: none;
+		border-radius: 100%;
+		padding: 0px;
 		width: $base * 2;
 		height: $base * 2;
-		border-radius: 100%;
 		background-color: #D1D6E3;
 
 		&--active {
 			background-color: $color-primary;
 		}
 
-		&+& {
-			margin-left: $base * 3;
-		}
 	}
 }
 

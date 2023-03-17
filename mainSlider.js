@@ -5,7 +5,7 @@ const images = [
 ]
 
 let slide = document.querySelector('.slider-main-image__item');
-let dots = document.querySelectorAll('.section-main-image > .dots > .dots__item');
+let dots = document.querySelectorAll('.section-main-image > .dots > li > .dots__item');
 let slideIndex = 0;
 
 let timer = setInterval(() => {

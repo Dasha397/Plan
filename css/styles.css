@@ -210,17 +210,19 @@ h6 {
   transition: 0.2s;
   cursor: pointer;
 }
+.dots li + li {
+  margin-left: 12px;
+}
 .dots__item {
+  border: none;
+  border-radius: 100%;
+  padding: 0px;
   width: 8px;
   height: 8px;
-  border-radius: 100%;
   background-color: #D1D6E3;
 }
 .dots__item--active {
   background-color: rgb(104, 136, 255);
-}
-.dots__item + .dots__item {
-  margin-left: 12px;
 }
 
 .line {
