@@ -24,7 +24,7 @@ rightSlider.addEventListener('click', () => {
 	}
 })
 
-let blogDots = document.querySelectorAll('.section-blog > .wrapper-inner > .dots > .dots__item');
+let blogDots = document.querySelectorAll('.section-blog > .wrapper-inner > .dots > li > .dots__item');
 
 for (let i = 0; i < blogDots.length; i++) {
 	blogDots[i].addEventListener('click', () => {
