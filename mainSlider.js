@@ -11,7 +11,6 @@ let slideIndex = 0;
 let timer = setInterval(() => {
 	let oldSlideIndex = slideIndex;
 	!isLastSlide(slideIndex) ? ++slideIndex : slideIndex = 0;
-	console.log(slideIndex);
 	nextSlide(oldSlideIndex, slideIndex);
 }, 2000);
 

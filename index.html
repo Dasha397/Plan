@@ -296,10 +296,8 @@
 				<h5>OUR RESOURCES</h5>
 				<h4>Start reading our blog</h4>
 				<div class="blog-slider">
-					<a href="#">
-						<img src="./img/Vector.svg" alt="vector left">
-					</a>
-					<div class="blog-slider-section">
+					<img src="./img/Vector.svg" alt="vector left" class="left-vector">
+					<div class="blog-slider-section slider--active">
 						<div class="blog-slider-section__img">
 							<div class="blog-slider-section__img-wrapper">
 								<img src="./img/Rectangle 3.svg" alt="1 img">
@@ -337,13 +335,47 @@
 							</div>
 						</div>
 					</div>
-					<a href="#">
-						<img src="./img/Vector (1).svg" alt="vector right">
-					</a>
+					<div class="blog-slider-section">
+						<div class="blog-slider-section__img">
+							<div class="blog-slider-section__img-wrapper">
+								<img src="./img/Rectangle 3.svg" alt="1 img">
+								<span>
+									<img src="./img/Group 66.svg" alt="loup">
+								</span>
+							</div>
+							<div class="blog-slider-section__img-wrapper">
+								<img src="./img/Rectangle 3.1.svg" alt="2 img">
+								<span>
+									<img src="./img/Group 66.svg" alt="loup">
+								</span>
+							</div>
+							<div class="blog-slider-section__img-wrapper">
+								<img src="./img/Rectangle 3.2.svg" alt="3 img">
+								<span>
+									<img src="./img/Group 66.svg" alt="loup">
+								</span>
+							</div>
+						</div>
+						<div class="blog-slider-section-content">
+							<h3>Planning</h3>
+							<p class="text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit
+								tractatos,
+								ut decore ...
+							</p>
+							<div class="btn-group">
+								<button class="btn-group-wrapper btn--primary">
+									<a href="#" class="btn">Read now</a>
+								</button>
+								<button class="btn-group-wrapper btn--transparent">
+									<a href="#" class="btn">Add to your bookmarks</a>
+								</button>
+							</div>
+						</div>
+					</div>
+					<img src="./img/Vector (1).svg" alt="vector right" class="right-vector">
 				</div>
 				<ul class="dots">
 					<li class="dots__item dots__item--active"></li>
-					<li class="dots__item"></li>
 					<li class="dots__item"></li>
 				</ul>
 			</div>
@@ -594,7 +626,8 @@
 		</footer>
 		<!--  -->
 
-		<script src="./index.js"></script>
+		<script src="./mainSlider.js"></script>
+		<script src="./blogSlider.js"></script>
 	</body>
 
 </html>

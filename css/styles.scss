@@ -655,8 +655,16 @@ h6 {
 			align-items: center;
 			margin-top: $base * 23;
 
-			&-section {
+			.slider--active {
 				display: flex;
+			}
+
+			img:hover {
+				cursor: pointer;
+			}
+
+			&-section {
+				display: none;
 				padding: 60px 30px;
 				justify-content: space-between;
 				background-color: #fff;
