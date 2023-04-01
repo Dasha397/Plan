@@ -1189,10 +1189,75 @@ h6 {
 		padding-right: $base * 20;
 		text-align: center;
 
+		@media (max-width: 800px) {
+			padding-left: 15px;
+			padding-right: 15px;
+
+			.faq {
+				margin-top: 60px;
+
+				&__item-description {
+					align-items: center;
+
+					.text {
+						font-size: 13px;
+						margin-left: 50px;
+						max-width: 350px;
+					}
+
+					.btn--transparent {
+						padding: 10px 2px;
+						border-radius: 4px;
+						margin-left: 20px;
+
+						a {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		@media (max-width: 655px) {
+			.faq__item-description {
+				flex-direction: column;
+				align-items: start;
+
+				.text {
+					margin-left: 50px;
+					max-width: 500px;
+				}
+
+				.btn--transparent {
+					margin-top: 15px;
+					margin-left: 50px;
+				}
+			}
+		}
+
+		@media (min-width: 800px) {
+			.faq {
+				margin-top: 100px;
+
+				.faq__item-description {
+					align-items: center;
+					justify-content: space-between;
+
+					.text {
+						margin-left: 60px;
+						max-width: 400px;
+					}
+
+					.btn--transparent {
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+
 		.faq {
 			display: flex;
 			flex-direction: column;
-			margin-top: $base * 25;
 			color: $color-main-text;
 			list-style: none;
 
@@ -1209,7 +1274,6 @@ h6 {
 
 					.text {
 						margin-left: 20px;
-
 					}
 
 					svg {
@@ -1240,13 +1304,9 @@ h6 {
 
 					.faq__item-description {
 						display: flex;
-						justify-content: space-between;
-						align-items: center;
 
 						.text {
 							margin-top: 10px;
-							margin-left: 60px;
-							max-width: 400px;
 							text-align: start;
 						}
 
