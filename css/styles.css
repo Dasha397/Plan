@@ -293,20 +293,20 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 1.5s;
+  transition: 1s;
 }
 .main-nav .burger-wrapper-outer .burger-wrapper-inner .burger__item {
   display: block;
   width: 100%;
   height: 2.4px;
-  background-color: #3D4F9F;
+  background-color: rgb(104, 136, 255);
   transition: 1.5s;
 }
 .main-nav .burger-wrapper-outer:focus .burger-wrapper-inner {
   transform: rotate(90deg);
 }
 .main-nav .burger-wrapper-outer:focus .burger-wrapper-inner .burger__item {
-  background-color: #e4e6f1;
+  background-color: #ffffff;
 }
 .main-nav .burger-wrapper-outer:focus ~ .burger-wrapper {
   transform: translateX(251px);
@@ -321,7 +321,7 @@ h6 {
   display: block;
   height: 100%;
   width: 252px;
-  background-color: #465285;
+  background-color: rgb(104, 136, 255);
   transition-duration: 1s;
   transition-timing-function: linear;
   z-index: 2;
@@ -351,7 +351,7 @@ h6 {
     box-sizing: border-box;
     width: 250px;
     height: 60px;
-    border-bottom: 1px #b4b8c3 solid;
+    border-bottom: 1px #d3d5db solid;
     margin: 0;
   }
   .main-nav .nav .nav-wrapper li a {
@@ -360,7 +360,7 @@ h6 {
     margin-left: 15px;
     width: 230px;
     height: 100%;
-    color: #e4e6f1;
+    color: #ffffff;
     font-size: 16px;
   }
 }
@@ -933,20 +933,41 @@ h6 {
   justify-content: space-between;
   text-align: center;
 }
+@media (min-width: 831px) {
+  .section-quotes .wrapper-inner .quotes-content {
+    height: 187px;
+    width: 335px;
+  }
+}
 @media (max-width: 830px) {
   .section-quotes .wrapper-inner {
     flex-direction: column;
     align-items: center;
   }
+  .section-quotes .wrapper-inner .quotes-content {
+    min-height: 150px;
+    width: 70%;
+  }
+  .section-quotes .wrapper-inner .quotes-content h5 {
+    margin-bottom: 0px;
+  }
   .section-quotes .wrapper-inner .dots {
     margin-top: 70px;
+  }
+}
+@media (max-width: 500px) {
+  .section-quotes .wrapper-inner .quotes-content {
+    width: 100%;
+  }
+}
+@media (max-width: 374px) {
+  .section-quotes .wrapper-inner .quotes-content h3 {
+    font-size: 28px;
   }
 }
 .section-quotes .wrapper-inner .quotes-content {
   display: flex;
   flex-direction: column;
-  height: 187px;
-  width: 335px;
   justify-content: space-between;
   padding-bottom: 80px;
 }
