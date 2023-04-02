@@ -1152,7 +1152,7 @@ h6 {
 }
 
 .section-newslatter {
-  background-color: rgb(233, 239, 255);
+  background-color: #fff;
 }
 .section-newslatter .wrapper-inner {
   display: flex;
@@ -1222,9 +1222,10 @@ h6 {
   width: 280px;
   border-radius: 4px;
   color: #697CA6;
+  background-color: #f4f4f8;
 }
 .section-newslatter .wrapper-inner .newslatter-form input::placeholder {
-  color: #B6BAC7;
+  color: #a4a6ad;
 }
 .section-newslatter .wrapper-inner .newslatter-form input:focus {
   outline: none;
@@ -1232,6 +1233,28 @@ h6 {
 .section-newslatter .wrapper-inner .newslatter-form .btn--blue {
   padding: 10px 30px;
   color: #fff;
+}
+
+.section-find {
+  background-color: rgb(233, 239, 255);
+}
+.section-find .wrapper-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.section-find .wrapper-inner .content {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-find .wrapper-inner .content span {
+  font-weight: 500;
+}
+.section-find .wrapper-inner .card {
+  width: 400px;
+  height: 200px;
 }
 
 .section-footer {

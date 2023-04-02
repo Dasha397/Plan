@@ -1421,7 +1421,7 @@ h6 {
 
 // NEWSLATTER
 .section-newslatter {
-	background-color: $color-gray;
+	background-color: #fff;
 
 	.wrapper-inner {
 		display: flex;
@@ -1507,9 +1507,10 @@ h6 {
 				width: 280px;
 				border-radius: 4px;
 				color: $color-dark-gray;
+				background-color: #f4f4f8;
 
 				&::placeholder {
-					color: #B6BAC7;
+					color: #a4a6ad;
 				}
 
 				&:focus {
@@ -1521,6 +1522,33 @@ h6 {
 				padding: 10px 30px;
 				color: $color-white;
 			}
+		}
+	}
+}
+
+// FIND
+.section-find {
+	background-color: $color-gray;
+
+	.wrapper-inner {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+
+		.content {
+			display: flex;
+			width: 45%;
+			flex-direction: column;
+			gap: 30px;
+
+			span {
+				font-weight: 500;
+			}
+		}
+
+		.card {
+			width: 400px;
+			height: 200px;
 		}
 	}
 }
