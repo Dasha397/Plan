@@ -293,14 +293,14 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 1s;
+  transition-duration: 0.5s;
 }
 .main-nav .burger-wrapper-outer .burger-wrapper-inner .burger__item {
   display: block;
   width: 100%;
   height: 2.4px;
   background-color: rgb(104, 136, 255);
-  transition: 1.5s;
+  transition-duration: 0.5s;
 }
 .main-nav .burger-wrapper-outer:focus .burger-wrapper-inner {
   transform: rotate(90deg);
@@ -322,7 +322,7 @@ h6 {
   height: 100%;
   width: 252px;
   background-color: rgb(104, 136, 255);
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
   z-index: 2;
 }
@@ -339,7 +339,7 @@ h6 {
     margin: 0px;
     width: 250px;
     height: 300px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-timing-function: linear;
     z-index: 2;
   }
@@ -1241,20 +1241,69 @@ h6 {
 .section-find .wrapper-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
+}
+@media (min-width: 850px) {
+  .section-find .wrapper-inner {
+    padding: 30px 60px;
+  }
+  .section-find .wrapper-inner .content {
+    width: 45%;
+    margin-right: 20px;
+  }
+  .section-find .wrapper-inner .card {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 849px) and (min-width: 650px) {
+  .section-find .wrapper-inner {
+    padding: 30px 40px;
+  }
+  .section-find .wrapper-inner .content {
+    width: 60%;
+    margin-right: 20px;
+  }
+  .section-find .wrapper-inner .content h3 {
+    font-size: 30px;
+  }
+  .section-find .wrapper-inner .content .text {
+    font-size: 13px;
+  }
+  .section-find .wrapper-inner .card {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media (max-width: 650px) {
+  .section-find .wrapper-inner {
+    padding: 60px 20px 0px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-find .wrapper-inner .content {
+    width: 100%;
+  }
+  .section-find .wrapper-inner .content h3 {
+    font-size: 30px;
+  }
+  .section-find .wrapper-inner .content .text {
+    font-size: 13px;
+  }
+  .section-find .wrapper-inner .card {
+    width: 400px;
+    height: 200px;
+  }
 }
 .section-find .wrapper-inner .content {
   display: flex;
-  width: 45%;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 .section-find .wrapper-inner .content span {
   font-weight: 500;
-}
-.section-find .wrapper-inner .card {
-  width: 400px;
-  height: 200px;
 }
 
 .section-footer {

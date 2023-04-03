@@ -3,12 +3,14 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./css/normalize.css">
 		<link rel="stylesheet" href="./css/styles.css">
-		<script src="https://api-maps.yandex.ru/3.0/?apikey=d625dddc-dab0-4c61-a431-c87e29dc9d60&lang=ru_RU"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=d625dddc-dab0-4c61-a431-c87e29dc9d60&lang=ru_RU"
+			type="text/javascript"></script>
+		<script src="./scripts/yandexCard.js"></script>
 	</head>
 
 	<body>
@@ -561,11 +563,10 @@
 			</div>
 		</section>
 		<!--  -->
-		<script src="./scripts/yandexCard.js"></script>
 
 		<!-- find us-->
 		<section class="wrapper-outer section-find">
-			<div class="wrapper-inner">
+			<div class="wrapper-inner wrapper-inner--wide">
 				<div class="content">
 					<h3><span>Where</span> you can <span>find</span> us</h3>
 					<p class="text">
@@ -574,9 +575,7 @@
 					</p>
 				</div>
 
-				<div id="map" class="card">
-
-				</div>
+				<div id="map" class="card"></div>
 			</div>
 		</section>
 		<!-- footer -->

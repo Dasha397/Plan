@@ -1,9 +1,7 @@
-ymaps3.ready.then(init);
+ymaps.ready(init);
 function init() {
-	const map = new ymaps3.YMap(document.getElementById('map'), {
-		location: {
-			center: [37.64, 55.76],
-			zoom: 7
-		}
+	let map = new ymaps.Map('map', {
+		center: [53.9177, -332.4050],
+		zoom: 18
 	});
 }
