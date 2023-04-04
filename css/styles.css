@@ -799,6 +799,10 @@ h6 {
 .section-blog .wrapper-inner--wide .blog-slider .slider--active {
   display: flex;
 }
+.section-blog .wrapper-inner--wide .blog-slider img {
+  transition: 1s;
+  z-index: 2;
+}
 .section-blog .wrapper-inner--wide .blog-slider img:hover {
   cursor: pointer;
 }
@@ -806,6 +810,12 @@ h6 {
   display: none;
   height: 268px;
   background-color: #fff;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper:hover {
+  z-index: 15;
+}
+.section-blog .wrapper-inner--wide .blog-slider-section__img-wrapper:hover img {
+  transform: scale(1.2);
 }
 @media (min-width: 1120px) {
   .section-blog .wrapper-inner--wide .blog-slider-section {
