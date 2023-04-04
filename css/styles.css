@@ -1216,19 +1216,36 @@ h6 {
 .section-newslatter .wrapper-inner .newslatter-form {
   display: flex;
   height: 50px;
+  position: relative;
 }
 .section-newslatter .wrapper-inner .newslatter-form input {
-  border: none;
   width: 280px;
   border-radius: 4px;
-  color: #697CA6;
+  border: 2px #ffffff solid;
+  color: #737477;
   background-color: #f4f4f8;
 }
 .section-newslatter .wrapper-inner .newslatter-form input::placeholder {
-  color: #a4a6ad;
+  color: #babbc1;
 }
 .section-newslatter .wrapper-inner .newslatter-form input:focus {
   outline: none;
+  border: 2px #e8e6e6 solid;
+}
+.section-newslatter .wrapper-inner .newslatter-form p {
+  display: none;
+  position: absolute;
+  left: 2px;
+  bottom: -25px;
+  color: #da7171;
+  font-size: 13px;
+}
+.section-newslatter .wrapper-inner .newslatter-form input:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: #fae5e5;
+  border: 2px #f49dac solid;
+}
+.section-newslatter .wrapper-inner .newslatter-form input:invalid:not(:focus):not(:placeholder-shown) + p {
+  display: block;
 }
 .section-newslatter .wrapper-inner .newslatter-form .btn--blue {
   padding: 10px 30px;

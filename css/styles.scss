@@ -1501,21 +1501,41 @@ h6 {
 		.newslatter-form {
 			display: flex;
 			height: 50px;
+			position: relative;
 
 			input {
-				border: none;
 				width: 280px;
 				border-radius: 4px;
-				color: $color-dark-gray;
+				border: 2px #ffffff solid;
+				color: #737477;
 				background-color: #f4f4f8;
 
 				&::placeholder {
-					color: #a4a6ad;
+					color: #babbc1;
 				}
+			}
 
-				&:focus {
-					outline: none;
-				}
+			input:focus {
+				outline: none;
+				border: 2px #e8e6e6 solid;
+			}
+
+			p {
+				display: none;
+				position: absolute;
+				left: 2px;
+				bottom: -25px;
+				color: #da7171;
+				font-size: 13px;
+			}
+
+			input:invalid:not(:focus):not(:placeholder-shown) {
+				background-color: #fae5e5;
+				border: 2px #f49dac solid;
+			}
+
+			input:invalid:not(:focus):not(:placeholder-shown)+p {
+				display: block;
 			}
 
 			.btn--blue {
